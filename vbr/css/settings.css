@@ -176,3 +176,15 @@
     z-index: 1000;
 }
 
+.tparrows.tp-leftarrow:before {
+    content: '\e824';
+}
+
+.tparrows:before {
+    font-family: "revicons";
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+}
