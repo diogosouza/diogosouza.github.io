@@ -180,6 +180,8 @@
     content: '\e824';
 }
 
+.tparrows.tp-rightarrow:before	{	content: '\e825'; }
+
 .tparrows:before {
     font-family: "revicons";
     font-size: 15px;
