@@ -1,7 +1,7 @@
 /* Global Variables */
 :root {
   --primary-color: #89c22e;
-  --secondary-color: #ec4067;
+  --secondary-color: #ff8908;
   --black: #041d24;
   --white: #ffffff;
   --bg-grey: #f5f6fa;
@@ -292,7 +292,6 @@ header .logo img {
   width: 65%;
 }
 
-.logo h1,
 .main-navigation-toggle {
   display: none;
 }
@@ -340,7 +339,7 @@ header .button.whatsapp:hover {
 }
 
 .intro-img {
-  width: 80%;
+  width: 60%;
 }
 
 /* Expertise Section */
@@ -966,7 +965,7 @@ section.portfolio {
   width: calc(50% - 15px);
   max-width: 380px;
   padding: 32px 0 40px;
-  background-color: var(--bg-grey);
+  background-color: rgba(255, 117, 156, 0.2);
   box-shadow: 0 0 10px 0 rgba(120, 135, 182, 0.1);
   border-radius: 9px;
   display: flex;
@@ -1643,15 +1642,7 @@ nav button {
     display: none;
   }
 
-  header .logo img {
-    display: none;
-  }
-
   #open-menu {
-    display: inline;
-  }
-
-  .logo h1 {
     display: inline;
   }
 
@@ -1990,10 +1981,6 @@ nav button {
 
   .text-super-lg {
     font-size: 1rem;
-  }
-
-  .logo h1 {
-    font-size: 1.5rem;
   }
 
   header .p-6 {
