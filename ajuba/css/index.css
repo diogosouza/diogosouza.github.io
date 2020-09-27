@@ -143,7 +143,6 @@ a {
   line-height: 1.5;
   font-size: 1em;
   font-family: inherit;
-  display: inline-flex;
 }
 
 a.button,
@@ -1210,7 +1209,7 @@ footer p {
 }
 
 .fl-socials img {
-  max-width: 40px;
+  width: 40px;
 }
 
 .fl-socials > li {
