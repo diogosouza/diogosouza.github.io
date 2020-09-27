@@ -996,15 +996,15 @@ section.portfolio {
 }
 
 .pack-1 .pack-header::before {
-  background-image: url(../images/icons/art.svg);
+  background-image: url(../images/icons/piggy-bank.svg);
 }
 
 .pack-plus .pack-header::before {
-  background-image: url(../images/icons/fire.svg);
+  background-image: url(../images/icons/gold.svg);
 }
 
 .pack-3 .pack-header::before {
-  background-image: url(../images/icons/rocket.svg);
+  background-image: url(../images/icons/diamond.svg);
 }
 
 .pricing-packs h4 {
