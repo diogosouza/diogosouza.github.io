@@ -1020,6 +1020,7 @@ section.portfolio {
   -webkit-box-ordinal-group: 3;
   order: 2;
   width: auto;
+  min-height: 185px;
 }
 
 .pack-advantage {
