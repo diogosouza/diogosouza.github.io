@@ -985,7 +985,7 @@ section.portfolio {
 }
 
 .pack-header::before {
-  height: 41px;
+  height: 62px;
   width: 55px;
   display: block;
   content: "";
