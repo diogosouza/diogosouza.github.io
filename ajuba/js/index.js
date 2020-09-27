@@ -53,23 +53,14 @@ for (let i = 0; i < menus.length; i++) {
 }
 
 // Main menu
-document.querySelector(".active").classList.remove("active");
-
-var url = window.location.href.replace("?m=1", "");
-var uri = url.substring(url.lastIndexOf("/") + 1);
-switch (uri) {
-  case "#expertise-box":
-    document.querySelectorAll(".menu-link")[1].classList.add("active");
-    break;
-  case "#porfolio":
-    document.querySelectorAll(".menu-link")[1].classList.add("active");
-    break;
-  case "#clients":
-    document.querySelectorAll(".menu-link")[1].classList.add("active");
-    break;
-  default:
-    document.querySelectorAll(".menu-link")[0].classList.add("active");
-    break;
+var links = document.getElementsByClassName("menu-link");
+for (let i = 0; i < links.length; i++) {
+  links[i].onclick = function () {
+    for (let i = 0; i < links.length; i++) {
+      links[i].classList.remove("active");
+    }
+    this.classList.add("active");
+  };
 }
 
 // Tabs
