@@ -306,7 +306,7 @@ header .menu-options a:not(.whatsapp):before {
   z-index: -999;
   left: 0;
   right: 100%;
-  bottom: -2px;
+  bottom: -4px;
   background: var(--primary-color);
   height: 0.25rem;
   -webkit-transition-property: right;
@@ -342,6 +342,10 @@ header .button.whatsapp:hover {
 }
 
 /* Expertise Section */
+.expertise-box {
+  padding-top: 3rem;
+}
+
 .home-custom-tab {
   --tabs-panel-padding: 2.5em 0;
   --tabs-align: space-between;
