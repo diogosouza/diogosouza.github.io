@@ -64,16 +64,25 @@ for (let i = 0; i < links.length; i++) {
 }
 
 // Tabs
-onClick("tab-2", () => {
-  var vignettes = document.getElementsByClassName("home-vignette");
-  for (let i = 0; i < vignettes.length; i++) {
-    vignettes[i].classList.remove("visible");
-    vignettes[i].classList.remove("hidden");
-  }
+var tabs = document.getElementsByClassName("tabs-btn");
+for (let i = 0; i < tabs.length; i++) {
+  tabs[i].onclick = function () {
+    for (let i = 0; i < tabs.length; i++) {
+      tabs[i].classList.remove("active");
+    }
+    this.classList.add("active");
 
-  document.querySelector("#vignette-1").classList.add("hidden");
-  document.querySelector("#vignette-2").classList.add("visible");
-});
+    var vignettes = document.getElementsByClassName("home-vignette");
+    for (let j = 0; j < vignettes.length; j++) {
+      vignettes[j].classList.add("hidden");
+      vignettes[j].classList.remove("visible");
+
+      if (i === j) {
+        vignettes[j].classList.add("visible");
+      }
+    }
+  };
+}
 
 // Scroll
 onClick("scroll-btn", scrollToTop);

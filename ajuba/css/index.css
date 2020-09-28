@@ -419,6 +419,11 @@ header .button.whatsapp:hover {
   z-index: 2;
 }
 
+.home-vignette li {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
 .home-vignette-media {
   flex-basis: 18em;
 }
@@ -691,7 +696,7 @@ section.portfolio {
 }
 
 .tic-toc {
-  --tic-toc-text-column-size: 2fr;
+  --tic-toc-text-column-size: 3fr;
   --tic-toc-scrim-column-size: 3.22fr;
   grid-gap: 2.5rem;
   grid-template-columns: var(--tic-toc-text-column-size) var(
@@ -707,7 +712,7 @@ section.portfolio {
 }
 
 .home-tictoc-1 {
-  margin-top: 10rem !important;
+  margin-top: 12rem !important;
 }
 
 .center-divider {
@@ -1234,12 +1239,12 @@ footer p {
   transition: all 0.3s ease-in-out;
 }
 
-.visible {
-  display: flex;
-}
-
 .hidden {
   display: none;
+}
+
+.visible {
+  display: flex;
 }
 
 @-webkit-keyframes fadeOut {
@@ -1480,7 +1485,7 @@ footer p {
 }
 
 .bg-right-bottom {
-  background-position: 100% 100%;
+  background-position: 110% 100%;
 }
 
 .fixed {
@@ -1933,10 +1938,10 @@ nav button {
   }
 
   .bg-right-bottom {
-    width: 95%;
+    width: 95% !important;
     background-position: 0 100% !important;
     left: 0;
-    margin-bottom: -8rem;
+    margin-bottom: -13rem;
   }
 
   .lets-go > div {
@@ -1974,10 +1979,20 @@ nav button {
   }
 }
 
-/* Tablets */
+/* Big Tablets  */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .bg-right-bottom {
+    width: 65% !important;
+    right: 0;
+    left: auto;
+  }
+}
+
+
+/* Small Tablets  */
 @media only screen and (min-width: 568px) and (max-width: 768px) {
   .bg-right-bottom {
-    width: 60%;
+    width: 70% !important;
     right: 0;
     left: auto;
   }
