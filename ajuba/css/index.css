@@ -7,7 +7,6 @@
   --bg-grey: #f5f6fa;
   --border-color: #d5d5df;
   --grey: #888a93;
-  --whatsapp-color: #25d366;
   --primary-font: "ProtoGroteskWeb";
   --secondary-font: "Kumbh Sans";
   --main-title-font-size: 68px;
@@ -323,12 +322,12 @@ header .menu-options a:hover:before {
 }
 
 header .button.whatsapp {
-  border-color: var(--whatsapp-color);
-  color: var(--whatsapp-color);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 header .button.whatsapp:hover {
-  background-color: var(--whatsapp-color);
+  background-color: var(--primary-color);
   color: var(--white);
 }
 
