@@ -906,7 +906,7 @@ section.portfolio {
 
 @media (min-width: 1000px) {
   .c-cos__list li {
-    margin: 1.5rem;
+    margin: 3rem;
   }
 }
 
@@ -937,8 +937,8 @@ section.portfolio {
 }
 
 .c-cos__list img {
-  width: calc(var(--size) * 1);
-  border-radius: 99px;
+  width: calc(var(--size) * 1.5);
+  max-width: 150px;
 }
 
 /* Faq Section */
@@ -1354,7 +1354,7 @@ footer p {
 }
 
 .w-full {
-  width: 100%;
+  width: 100% !important;
 }
 
 .w-94 {
@@ -1513,6 +1513,10 @@ footer p {
 
 .opacity-100 {
   opacity: 1;
+}
+
+.rounded-full {
+  border-radius: 99px;
 }
 
 .rounded-none {
