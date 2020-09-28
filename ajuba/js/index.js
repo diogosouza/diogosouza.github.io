@@ -34,7 +34,7 @@ for (let i = 0; i < acc.length; i++) {
   });
 }
 
-acc[0].click() & acc[3].click();
+acc[0].click() & acc[10].click();
 
 // Header menus
 onClick("open-menu", () => {

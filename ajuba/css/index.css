@@ -1156,11 +1156,16 @@ section.portfolio {
 }
 
 .panel {
-  color: var(--grey);
+  color: #d1d1d1;
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.1s ease-out;
+}
+
+.panel li {
+  list-style: disc;
+  margin-left: 3rem;
 }
 
 .accordion.active + .panel {
