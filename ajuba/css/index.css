@@ -1159,6 +1159,10 @@ section.portfolio {
   margin-left: 5px;
 }
 
+.accordion.active:after {
+  content: "\2012";
+}
+
 .panel {
   color: #d1d1d1;
   padding: 0 18px;
@@ -1986,7 +1990,6 @@ nav button {
     left: auto;
   }
 }
-
 
 /* Small Tablets  */
 @media only screen and (min-width: 568px) and (max-width: 768px) {
