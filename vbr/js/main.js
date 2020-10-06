@@ -26,7 +26,7 @@
 
     $("html, body").animate(
       {
-        scrollTop: jQuery($.attr(this, "href")).offset().top,
+        scrollTop: $(this).offset().top,
       },
       500
     );
