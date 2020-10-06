@@ -20,6 +20,17 @@
   $("#scroll-btn").click(function () {
     scrollToTop();
   });
+    
+    $('a[href^="#"]').click(function (event) {
+    event.preventDefault();
+
+    $("html, body").animate(
+      {
+        scrollTop: jQuery($.attr(this, "href")).offset().top,
+      },
+      500
+    );
+  });
 
   // Logo Animation
   var textWrapper = document.querySelector(".ml9 .letters");
