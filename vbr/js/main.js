@@ -16,7 +16,7 @@
       break;
   }
 
-  $(document).on("click", 'a[href^="#"]', function (event) {
+  $('a[href^="#"]').not(".nav-link").click(function (event) {
     event.preventDefault();
 
     $("html, body").animate(
@@ -26,7 +26,7 @@
       500
     );
   });
-
+    
   // Scroll button
   $("#scroll-btn").click(function () {
     scrollToTop();
