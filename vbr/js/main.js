@@ -15,17 +15,6 @@
       $("#main__home").show();
       break;
   }
-
-  $('a[href^="#"]').not(".nav-link").click(function (event) {
-    event.preventDefault();
-
-    $("html, body").animate(
-      {
-        scrollTop: $($.attr(this, "href")).offset().top,
-      },
-      500
-    );
-  });
     
   // Scroll button
   $("#scroll-btn").click(function () {
