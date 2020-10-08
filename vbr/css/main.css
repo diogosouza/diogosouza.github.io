@@ -4,6 +4,9 @@
     font-family: Raleway,Segoe UI,cursive !important;
     font-weight: normal !important;
 }
+.developed__by i {
+    font-size: 1rem !important;
+}
 .developed__by a {
     color: #ff8908;
     text-decoration: underline;
