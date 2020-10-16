@@ -9,7 +9,6 @@
 		var navbar = $(".navigation-holder");
 		var openBtn = $(".navbar-header .open-btn");
 		var closeBtn = $(".navigation-holder .close-navbar");
-		var closeBtn2 = $(".navigation-holder .close-navbar2");
 
 		openBtn.on("click", function () {
 			if (!navbar.hasClass("slideInn")) {
@@ -19,13 +18,6 @@
 		});
 
 		closeBtn.on("click", function () {
-			if (navbar.hasClass("slideInn")) {
-				navbar.removeClass("slideInn");
-			}
-			return false;
-		});
-
-		closeBtn2.on("click", function () {
 			if (navbar.hasClass("slideInn")) {
 				navbar.removeClass("slideInn");
 			}
@@ -103,7 +95,8 @@
 	// smooth-scrolling
 	function smoothScrolling($scrollLinks, $topOffset) {
 		var links = $scrollLinks;
-		var topGap = $topOffset;
+        var topGap = $topOffset;
+        var navbar = $(".navigation-holder");
 
 		links.on("click", function () {
 			if (
@@ -125,6 +118,10 @@
 					);
 					return false;
 				}
+            }
+            
+            if (navbar.hasClass("slideInn")) {
+				navbar.removeClass("slideInn");
 			}
 			return false;
 		});
