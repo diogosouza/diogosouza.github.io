@@ -116,7 +116,7 @@
             1000,
             "easeInOutExpo"
           );
-          
+
           if (navbar.hasClass("slideInn")) {
             navbar.removeClass("slideInn");
           }
@@ -656,7 +656,7 @@
     smallNavFunctionality();
 
     smoothScrolling(
-      $("#navbar > ul > li > a[href^='#']"),
+      $("#navbar > ul > li a[href^='#']"),
       $(".site-header .navigation").innerHeight()
     );
   });
