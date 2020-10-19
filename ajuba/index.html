@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <b:skin version="1.3.0"><![CDATA[]]></b:skin>
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://diogosouza.github.io/ajuba/images/icons/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://diogosouza.github.io/ajuba/images/icons/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Ajubá Design - Web Design para Todas as Temperaturas</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@6.3.1/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://diogosouza.github.io/ajuba/css/index.css"
+    />
+  </head>
+  <body>
+    <b:section id="empty" />
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        Você está usando uma versão <strong>antiga</strong> de navegador. Por
+        favor, <a href="#">atualize seu navegador</a> para melhorar sua
+        experiência.
+      </p>
+    <![endif]-->
+
+    <button id="scroll-btn" title="Go to top">
+      <i class="fas fa-arrow-up">↑</i>
+    </button>
+
+    <header>
+      <nav class="menu">
+        <div class="header flex-center">
+          <div class="logo-menu">
+            <a href="/" class="logo">
+              <img
+                src="https://diogosouza.github.io/ajuba/images/logo.svg"
+                alt="Logo Ajubá Design"
+              />
+            </a>
+          </div>
+
+          <div class="menu-options">
+            <ul class="flex">
+              <li class="m-1 center">
+                <a href="/" class="menu-link active">Oi, Tudo Bem?</a>
+              </li>
+              <li class="m-1 center">
+                <a href="#expertise-box" class="menu-link">Quem Somos</a>
+              </li>
+              <li class="m-1 center">
+                <a href="#portfolio" class="menu-link">Portfólio</a>
+              </li>
+              <li class="m-1 center">
+                <a href="#clients" class="menu-link">Nossos Clientes</a>
+              </li>
+              <li class="m-1 center">
+                <a
+                  class="button whatsapp"
+                  href="https://wa.me/5511968628708?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20sobre%20seus%20serviços."
+                  ><i class="fab fa-whatsapp"></i> <span>Manda um Zap!</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <input
+            class="main-navigation-toggle"
+            id="page-nav-toggle"
+            type="checkbox"
+          />
+
+          <label for="page-nav-toggle" id="open-menu">
+            <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+              <g class="icon-group">
+                <g class="icon--menu">
+                  <path d="M 6 0 L 54 0"></path>
+                  <path d="M 6 15 L 54 15"></path>
+                  <path d="M 6 30 L 54 30"></path>
+                </g>
+                <g class="icon--close">
+                  <path d="M 15 0 L 45 30"></path>
+                  <path d="M 15 30 L 45 0"></path>
+                </g>
+              </g>
+            </svg>
+          </label>
+
+          <nav
+            id="mob-menu"
+            class="fixed text-bold w-94 z-20 transition-250 top-0 right-0 bottom-0 left-0 bg-grey p-4 select-none bottom-auto shadow z-10 overflow-y-auto smooth-scroll hidden-scrollbars pointer-events-auto opacity-100 rounded-none"
+          >
+            <div class="hidden justify-end mb-12 mt-1" style="display: flex">
+              <button
+                id="close-menu"
+                class="h-10 w-10 mr-1 hover-effect relative"
+              >
+                <span
+                  class="h-4px rounded w-full bg-white absolute top-1/2 left-1/2 rotate-centered-45"
+                ></span
+                ><span
+                  class="h-4px rounded w-full bg-white absolute top-1/2 left-1/2 rotate-centered--45"
+                ></span>
+              </button>
+            </div>
+            <ul class="hidden flex flex-col p-6">
+              <li>
+                <a
+                  href="/"
+                  class="m-menu no-underline cursor-pointer inline-block text-white px-2 py-4 border-b border-transparent-white text-super-lg w-full hover-effect text-jade pointer-events-none"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="m-menu no-underline cursor-pointer inline-block text-white px-2 py-4 border-b border-transparent-white text-super-lg w-full hover-effect"
+                  href="#expertise-box"
+                  >Quem Somos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="m-menu no-underline cursor-pointer inline-block text-white px-2 py-4 border-b border-transparent-white text-super-lg w-full hover-effect"
+                  >Portfólio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#clients"
+                  class="m-menu no-underline cursor-pointer inline-block text-white px-2 py-4 border-b border-transparent-white text-super-lg w-full hover-effect"
+                  >Nossos Clientes</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="main">
+        <div class="flex">
+          <div class="intro-content">
+            <h1 class="heading highlighted-title">
+              Nós criamos
+              <strong class="text-grey"
+                ><span>memoráveis</span
+                ><img
+                  alt=""
+                  src="https://diogosouza.github.io/ajuba/images/title-bg.svg"
+                  height="0"
+                  width="0"
+              /></strong>
+              <br />experiências de design.
+            </h1>
+            <p class="mt-1">
+              Elaboradas com <strong>propósito</strong>,
+              <strong>significado</strong> e uma pitada de
+              <strong>amor</strong>.
+            </p>
+            <a
+              class="button whatsapp mt-1"
+              href="https://wa.me/5511968628708?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20sobre%20seus%20serviços."
+              ><i class="fab fa-whatsapp"></i>
+              <span>Amei! Quero orçamento!</span></a
+            >
+          </div>
+
+          <div class="intro-img">
+            <figure>
+              <img
+                src="https://diogosouza.github.io/ajuba/images/bg-footer.svg"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="expertise-box" class="expertise-box flex">
+        <div class="card home-custom-tab">
+          <h1>O que esperar de nós?</h1>
+
+          <div class="default-divider pb-1">
+            <div class="divider-container">
+              <div class="divider">
+                <span class="divider-separator"> </span>
+                <span class="divider-separator sep-2"> </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs">
+            <div role="tablist" class="tabs-list">
+              <button id="tab-1" class="button tabs-btn active">
+                <span>Quem somos</span>
+              </button>
+              <button id="tab-2" class="button tabs-btn">
+                <span>Serviços</span>
+              </button>
+              <button id="tab-3" class="button tabs-btn">
+                <span>Valores</span>
+              </button>
+              <button id="tab-4" class="button tabs-btn">
+                <span>Woow!</span>
+              </button>
+            </div>
+            <div tabindex="0" class="tabs-panel mt-1">
+              <div id="vignette-1" class="lo home-vignette visible">
+                <div class="home-vignette-media" data-aos="fade-right">
+                  <img
+                    src="https://diogosouza.github.io/ajuba/images/creative.svg"
+                    alt="Wow!"
+                    width="w-3\/5"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="home-vignette-content" data-aos="fade">
+                  <h2 class="subheading">
+                    Somos loucos por designs
+                    <span class="highlighted-text">bonitos</span> e
+                    <span class="highlighted-text">criativos</span>.
+                  </h2>
+                  <p class="paragraph">
+                    Nossa inspiração vem de coisas simples e do dia a dia.
+                    <br /><br />
+                    Criamos artes cativantes, <i>clean</i> e modernas. Para
+                    todos os gostos, idades e mercados.
+                  </p>
+                  <br />
+                  <a href="#portfolio">Vem ver nosso portfólio → </a>
+                </div>
+                <div class="home-vignette-stats mt-1" data-aos="fade-left">
+                  <div class="lo home-vignette-stats-list">
+                    <div class="stats">
+                      <span class="stats-number">13</span>
+                      <span class="stats-description">Projetos realizados</span>
+                    </div>
+                    <div class="stats">
+                      <span class="stats-number">40k</span>
+                      <span class="stats-description">Acessos até agora</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="vignette-2" class="lo home-vignette hidden">
+                <div class="home-vignette-media" data-aos="fade-right">
+                  <img
+                    src="https://diogosouza.github.io/ajuba/images/services.svg"
+                    alt="Wow!"
+                    width="350"
+                    height="240"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="home-vignette-content" data-aos="fade">
+                  <h2 class="subheading">
+                    Fazemos de
+                    <span class="highlighted-text">tudo</span> um "muito". É só
+                    pedir.
+                  </h2>
+                  <p class="paragraph">
+                    Nossos serviços envolvem qualquer design destinado à web
+                    e/ou impressão.
+                  </p>
+                  <ul>
+                    <li>Logo, slogans</li>
+                    <li>Cartões de visita, fotos e capas para redes sociais</li>
+                    <li>Panfletos, cardápios, embalagens</li>
+                    <li>Artes para uniformes e camisetas</li>
+                    <li>Websites</li>
+                  </ul>
+                </div>
+                <div class="home-vignette-stats mt-1" data-aos="fade-left">
+                  <div class="lo home-vignette-stats-list">
+                    <div class="stats">
+                      <span class="stats-number">100%</span>
+                      <span class="stats-description">customizado</span>
+                    </div>
+                    <div class="stats">
+                      <span class="stats-number">101%</span>
+                      <span class="stats-description">moderno e original</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="vignette-3" class="lo home-vignette hidden">
+                <div class="home-vignette-media" data-aos="fade-right">
+                  <img
+                    src="https://diogosouza.github.io/ajuba/images/values.svg"
+                    alt="Wow!"
+                    width="350"
+                    height="240"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="home-vignette-content" data-aos="fade">
+                  <h2 class="subheading">
+                    Um punhado de
+                    <span class="highlighted-text">valores</span> é adicionado
+                    em cada trabalho.
+                  </h2>
+                  <p class="paragraph">
+                    Nossos valores incluem: Respeito. Clareza. Honestidade.
+                    Compromisso. Foco. E criatividade.
+                    <br /><br />
+                    Não há outro caminho para atingir a excelência que não
+                    estes. A gente sabe e pratica isso!
+                  </p>
+                  <br />
+                </div>
+                <div class="home-vignette-stats mt-1" data-aos="fade-left">
+                  <div class="lo home-vignette-stats-list">
+                    <div class="stats">
+                      <span class="stats-number">...</span>
+                      <span class="stats-description">Nossos valores</span>
+                    </div>
+                    <div class="stats">
+                      <span class="stats-number">...</span>
+                      <span class="stats-description">vem antes de tudo</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="vignette-4" class="lo home-vignette hidden">
+                <div class="home-vignette-media" data-aos="fade-right">
+                  <img
+                    src="https://diogosouza.github.io/ajuba/images/wow.svg"
+                    alt="Wow!"
+                    width="350"
+                    height="240"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="home-vignette-content" data-aos="fade">
+                  <h2 class="subheading">
+                    Queremos arrancar um baita
+                    <span class="highlighted-text">Woow</span> de você.
+                  </h2>
+                  <p class="paragraph">
+                    Só assim conseguimos fazer diferença na presença online de
+                    nossos clientes.
+                    <br /><br />
+                    É também a única maneira de te provar do que somos capazes.
+                  </p>
+                  <br />
+                  <a
+                    href="https://wa.me/5511968628708?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20sobre%20seus%20serviços."
+                    >Quero pedir um orçamento →
+                  </a>
+                </div>
+                <div class="home-vignette-stats mt-1" data-aos="fade-left">
+                  <div class="lo home-vignette-stats-list">
+                    <div class="stats">
+                      <span class="stats-number">?!</span>
+                      <span class="stats-description">E aí, simbora?</span>
+                    </div>
+                    <div class="stats">
+                      <span class="stats-number">;)</span>
+                      <span class="stats-description"
+                        >Você não vai se arrepender</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio">
+        <div style="grid-column: standard">
+          <div class="preheader">Nem mais, nem menos</div>
+          <h2 class="heading text-center">
+            <span class="heading-new-line highlighted-title"
+              >A gente
+              <strong class="text-grey"
+                ><span>capricha</span
+                ><img
+                  alt=""
+                  src="https://diogosouza.github.io/ajuba/images/title-bg.svg"
+                  height="0"
+                  width="0"
+              /></strong>
+            </span>
+            <span>em cada trabalho.</span>
+          </h2>
+          <div class="drag-icon">
+            <div class="drag-icon__rig">
+              <img
+                class="drag-icon__rig--hand"
+                src="https://diogosouza.github.io/ajuba/images/icons/icon-hand.svg"
+                alt=""
+              />
+              <span class="drag-icon__rig--line"></span>
+            </div>
+            <p>arraste para ver mais</p>
+          </div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper-container portfolio-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a
+                target="_blank"
+                href="https://www.vembrincarderoda.com"
+                class="slide"
+                ><div class="card-bg"></div>
+
+                <img
+                  class="slide-img"
+                  src="https://diogosouza.github.io/ajuba/images/brincar-de-roda.png"
+                  alt="Strander Case"
+                />
+                <h3 class="slide-title">
+                  <span>Brincar</span> <span>de Roda</span>
+                </h3></a
+              >
+            </div>
+
+            <div class="swiper-slide">
+              <a
+                target="_blank"
+                href="https://www.altaluna.com.br"
+                class="slide"
+                ><div class="card-bg"></div>
+
+                <img
+                  class="slide-img"
+                  src="https://diogosouza.github.io/ajuba/images/altaluna.png"
+                  alt="Strander Case"
+                />
+                <h3 class="slide-title">
+                  <span>Alta</span> <span>Luna</span>
+                </h3></a
+              >
+            </div>
+
+            <div class="swiper-slide">
+              <a target="_blank" href="https://www.translator.lu" class="slide"
+                ><div class="card-bg"></div>
+
+                <img
+                  class="slide-img"
+                  src="https://diogosouza.github.io/ajuba/images/translator-lu.png"
+                  alt="Strander Case"
+                />
+                <h3 class="slide-title">
+                  <span>Translator</span>
+                </h3></a
+              >
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#" class="slide"
+                ><div class="card-bg"></div>
+
+                <img
+                  class="slide-img"
+                  src="https://diogosouza.github.io/ajuba/images/opsico.png"
+                  alt="Strander Case"
+                />
+                <h3 class="slide-title">
+                  <span>OPSICO</span>
+                </h3></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="more-services">
+        <div style="grid-column: standard">
+          <div class="preheader">Tem sim, muito mais</div>
+          <h2 class="heading text-center">
+            <span class="heading-new-line highlighted-title"
+              >Tem mais serviços?</span
+            >
+          </h2>
+        </div>
+
+        <div class="center-divider">
+          <div class="divider-container m-a">
+            <div class="divider">
+              <span class="divider-separator"> </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-more-services">
+          <section class="tic-toc">
+            <div
+              class="tic-toc-text-left"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <h2 class="subheading">
+                Otimização de design e performance de sites
+              </h2>
+              <p class="paragraph">
+                Tudo bem se você já tem um site. Otimizamos ele todinho:
+              </p>
+              <ul class="list list-checked">
+                <li class="list-item list-item-checked">
+                  <!---->Modernização de design e layout
+                </li>
+                <li class="list-item list-item-checked">
+                  <!---->Performance e velocidade de carregamento
+                </li>
+                <li class="list-item list-item-checked">
+                  <!---->Desempenho no Google
+                </li>
+              </ul>
+            </div>
+            <div class="tic-toc-image-right">
+              <div class="scrim-layers home-scrim-deploy">
+                <div
+                  class="scrim-layers-caption scrim-layers-caption-top"
+                ></div>
+
+                <img
+                  src="https://diogosouza.github.io/ajuba/images/site_optimize.svg"
+                />
+
+                <div class="scrim-layers-caption scrim-layers-caption-bottom">
+                  <div
+                    data-aos="fade-left"
+                    class="scrim-caption scrim-caption-align-center"
+                    style="--animation-on-scroll-delay: 850ms"
+                  >
+                    <span
+                      >Deixe seu site lindo, rápido e mais competitivo para o
+                      mercado</span
+                    >
+                    <div
+                      aria-hidden="true"
+                      class="scrim-layers-caption-line"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!---->
+            <!---->
+          </section>
+          <section class="tic-toc home-tictoc-1 tic-toc-alternate">
+            <!---->
+            <!---->
+            <div class="tic-toc-image-left">
+              <div class="scrim-layers home-scrim-forms">
+                <div class="scrim-layers-caption scrim-layers-caption-top">
+                  <div
+                    data-aos="fade-right"
+                    class="scrim-caption scrim-caption-align-center"
+                    style="--animation-on-scroll-delay: 300ms"
+                  >
+                    <span
+                      >A gente te ajuda em cada passo, para fazer a campanha
+                      perfeita!</span
+                    >
+                    <div
+                      aria-hidden="true"
+                      class="scrim-layers-caption-line"
+                    ></div>
+                  </div>
+                </div>
+
+                <img
+                  src="https://diogosouza.github.io/ajuba/images/turbo_campaign.svg"
+                />
+
+                <div
+                  class="scrim-layers-caption scrim-layers-caption-bottom"
+                ></div>
+              </div>
+            </div>
+            <div
+              class="tic-toc-text-right"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <h2 class="subheading">
+                Campanhas publicitárias inteiras do zero
+              </h2>
+              <p class="paragraph">
+                Campanhas dão um baita trabalhão. A gente ajuda a turbinar esse
+                processo:
+              </p>
+              <ul class="list home-tictoc-features-list list-checked">
+                <li class="list-item list-item-checked"><!---->Panfletos,</li>
+                <li class="list-item list-item-checked">
+                  <!---->Banners para site,
+                </li>
+                <li class="list-item list-item-checked">
+                  <!---->Posts em redes sociais,
+                </li>
+                <li class="list-item list-item-checked">
+                  <!---->Etc, etc &amp; etc.
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="tic-toc home-tictoc-2">
+            <div
+              class="tic-toc-text-left"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <h2 class="subheading">
+                Consultoria em marketing, design e estratégias em geral
+              </h2>
+              <p class="paragraph">
+                Promover uma empresa, uma marca é bem difícil. Especialmente se
+                você está no começo.<br /><br />
+                A Ajubá também fornece uma consultoria próxima que vai entender
+                seus problemas e te auxiliar a definir a melhor estratégia.
+              </p>
+            </div>
+            <div class="tic-toc-image-right">
+              <div class="scrim-layers home-scrim-build-plugins">
+                <div
+                  class="scrim-layers-caption scrim-layers-caption-top"
+                ></div>
+
+                <img
+                  src="https://diogosouza.github.io/ajuba/images/consultancy.svg"
+                />
+
+                <div class="scrim-layers-caption scrim-layers-caption-bottom">
+                  <div
+                    data-aos="fade-left"
+                    class="scrim-caption scrim-caption-align-center"
+                    style="--animation-on-scroll-delay: 300ms"
+                  >
+                    <span
+                      >1, 2, 3... e taí sua marca mostrando a que veio no
+                      mundo!</span
+                    >
+                    <div
+                      aria-hidden="true"
+                      class="scrim-layers-caption-line"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!---->
+            <!---->
+          </section>
+        </div>
+      </section>
+
+      <section id="clients" class="clients">
+        <div class="c-cos o-gutter">
+          <div class="c-cos__inner o-row | js-smooth-section">
+            <h3 class="c-cos__title o-h4 text-center">
+              Sorrisos que deixamos por aí ...
+            </h3>
+            <div class="c-cos__list-wrap">
+              <ul class="c-cos__list">
+                <li>
+                  <div
+                    class="js-parallax"
+                    data-from='{"yPercent": "-15"}'
+                    data-to='{"yPercent": "15"}'
+                    style="
+                      transform: translate(0%, -7.8404%)
+                        translate3d(0px, 0px, 0px);
+                    "
+                  >
+                    <img
+                      src="https://diogosouza.github.io/ajuba/images/partners/altaluna.png"
+                      class="w-full rounded-full"
+                      alt="Alta Luna"
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="js-parallax"
+                    data-from='{"yPercent": "15"}'
+                    data-to='{"yPercent": "-15"}'
+                    style="
+                      transform: translate(0%, 6.3581%)
+                        translate3d(0px, 0px, 0px);
+                    "
+                  >
+                    <img
+                      src="https://diogosouza.github.io/ajuba/images/partners/brincarderoda.png"
+                      alt="dockers"
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="js-parallax"
+                    data-from='{"yPercent": "-15"}'
+                    data-to='{"yPercent": "15"}'
+                    style="
+                      transform: translate(0%, -7.8404%)
+                        translate3d(0px, 0px, 0px);
+                    "
+                  >
+                    <img
+                      src="https://diogosouza.github.io/ajuba/images/partners/viver100destino.png"
+                      alt="exoscale"
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="js-parallax"
+                    data-from='{"yPercent": "15"}'
+                    data-to='{"yPercent": "-15"}'
+                    style="
+                      transform: translate(0%, 6.3581%)
+                        translate3d(0px, 0px, 0px);
+                    "
+                  >
+                    <img
+                      src="https://diogosouza.github.io/ajuba/images/partners/fabrica-oculos.png"
+                      alt="gruntworks"
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="js-parallax"
+                    data-from='{"yPercent": "-15"}'
+                    data-to='{"yPercent": "15"}'
+                    style="
+                      transform: translate(0%, -7.8404%)
+                        translate3d(0px, 0px, 0px);
+                    "
+                  >
+                    <img
+                      src="https://diogosouza.github.io/ajuba/images/partners/translator.png"
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="js-parallax"
+                    data-from='{"yPercent": "15"}'
+                    data-to='{"yPercent": "-15"}'
+                    style="
+                      transform: translate(0%, 6.3581%)
+                        translate3d(0px, 0px, 0px);
+                    "
+                  >
+                    <img
+                      src="https://diogosouza.github.io/ajuba/images/partners/opsico.png"
+                    />
+                  </div>
+                </li>
+              </ul>
+
+              <a
+                target="_blank"
+                class="button whatsapp active c-cos__btn | js-open-cmodal"
+                href="https://wa.me/5511968628708?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20sobre%20seus%20serviços."
+                ><i class="fab fa-whatsapp"></i>
+                <span>Vem falar com a gente!</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div>
+          <h1>Ainda com dúvidas?</h1>
+          <div class="default-divider pb-1">
+            <div class="divider-container">
+              <div class="divider">
+                <span class="divider-separator"> </span>
+                <span class="divider-separator sep-2"> </span>
+              </div>
+            </div>
+          </div>
+          <div class="faq-list">
+            <div class="faq-1" data-aos="fade">
+              <span class="accordion"
+                >Com quais tipos de designs vocês trabalham?</span
+              >
+              <div class="panel">
+                <p>
+                  De tudo que você imaginar. Logos, cartões de visita, fotos e
+                  capas para redes sociais, slogans, panfletos, cardápios,
+                  embalagens, artes para uniformes e camisetas, websites e muito
+                  mais.
+                </p>
+              </div>
+
+              <span class="accordion">Quais são as etapas de criação?</span>
+              <div class="panel">
+                <p>
+                  Primeiro a gente conversa contigo para pegar detalhes como
+                  cores, fontes, inspirações, seus gostos e preferências.
+                  Depois, vamos ao trabalho. Há cada etapa, vamos te notificando
+                  e enviando os detalhes de como as artes estão ficando.
+                  <br /><br />
+                  Nada vai adiante sem sua aprovação, fica tranquilo(a)!
+                  <br /><br />
+                  Assim que estiver satisfeito(a), finalizamos e te enviamos os
+                  arquivos.
+                </p>
+              </div>
+
+              <span class="accordion">Quantas artes de logos vocês fazem?</span>
+              <div class="panel">
+                <p>
+                  Para começar, produzimos de duas a três artes diferentes.
+                  Então, você poderá decidir entre aprovar uma delas, solicitar
+                  alterações ou reprovar todas. O processo se repete até que
+                  receba sua logo ideal.
+                </p>
+              </div>
+
+              <span class="accordion"
+                >Minha logo será única? Preciso registrá-la?</span
+              >
+              <div class="panel">
+                <p>
+                  Sem sombra de dúvidas! Nossos projetos são totalmente
+                  exclusivos, criados do zero para você! Temos tolerância zero
+                  com plágio.
+                  <br /><br />
+                  O registro da sua logo ficará por sua conta decidir, mas nós
+                  (e órgãos como o Sebrae) super recomendamos.
+                  <br /><br />
+                  Ah, não trabalhamos com registro de marca, tá?! Você pode
+                  encontrar mais informações sobre registro de marcas nesse
+                  <a
+                    href="https://www.sebrae.com.br/sites/PortalSebrae/artigos/artigoshome/como-registrar-uma-marca,6b0a634e2ca62410VgnVCM100000b272010aRCRD"
+                    >link</a
+                  >.
+                </p>
+              </div>
+
+              <span class="accordion">Quanto tempo demora para entregar?</span>
+              <div class="panel">
+                <p>
+                  Trabalhamos super rápido. Em até dois dias úteis, no máximo,
+                  você recebe suas primeiras opções de logo.
+                  <br /><br />
+                  Para outros trabalhos (banner, panfletos, outdoors, etc.) os
+                  prazos variam um pouco. Favor entrar em contato conosco para
+                  solicitar os prazos, blz?
+                </p>
+              </div>
+
+              <span class="accordion"
+                >Eu posso pedir alterações no meio do processo?</span
+              >
+              <div class="panel">
+                <p>
+                  Sim, e deve, hehe. Quanto mais feedback e informações
+                  recebermos do seu lado, mais rápido será todo o processo.
+                  <br /><br />
+                  Fique à vontade para solicitar quantas alterações achar
+                  necessárias! :)
+                </p>
+              </div>
+
+              <span class="accordion"
+                >Quais arquivos receberei? São editáveis?</span
+              >
+              <div class="panel">
+                <p>
+                  Trabalhamos com o padrão do mercado, arquivos de alta
+                  qualidade e resolução, editáveis e nos formatos Ai (Adobe
+                  Illustrator), EPS, JPG, PNG.
+                  <br /><br />
+                  Os arquivos (exceto JPG), vão com fundo transparente. Assim,
+                  você pode incluir suas artes em qualquer lugar (redes sociais,
+                  website, banners, etc.).
+                </p>
+              </div>
+
+              <span class="accordion">Vocês imprimem também?</span>
+              <div class="panel">
+                <p>
+                  Infelizmente não. Somos uma agência 100% digital, logo, não
+                  lidamos com materiais impressos. Produzimos apenas as artes em
+                  geral.
+                  <br /><br />
+                  Todavia, caso precise de ajuda com impressões, podemos te
+                  auxiliar a encontrar o local ideal (sem custos).
+                </p>
+              </div>
+
+              <span class="accordion">Que tipos de sites vocês constroem?</span>
+              <div class="panel">
+                <p>
+                  Criamos todo tipo de site, desde sites
+                  <strong>One Page</strong> (de uma página só) até de múltiplas
+                  páginas. <br /><br />
+                  <i
+                    >Atenção: No momento, não trabalhamos com lojas virtuais,
+                    nem sistemas web.</i
+                  >
+                </p>
+              </div>
+
+              <span class="accordion"
+                >Meu site vai ficar bonito nos tablets e smartphones?</span
+              >
+              <div class="panel">
+                <p>
+                  Sim, faremos o seu site responsivo e terá as versões para
+                  funcionar em Smartphones e no PC também. Seu site também será
+                  projetado para funcionar bonitinho na maioria dos navegadores
+                  modernos.
+                </p>
+              </div>
+            </div>
+            <div class="faq-2" data-aos="fade">
+              <span class="accordion">Vocês trabalham com Wordpress?</span>
+              <div class="panel">
+                <p>
+                  No momento não. Nossos sites são construídos do zero, sem uso
+                  de nenhuma ferramenta externa (como Wordpress, Wix, etc.).
+                  <br /><br />
+                  Temos uma razão para isso. Geralmente, essas ferramentas
+                  agilizam o trabalho, mas adicionam um punhado de arquivos e
+                  scripts adicionais que tornam seu site bem pesado. Queremos
+                  que ele seja o mais leve e rápido possível. Por isso, somos
+                  bem roots! :)
+                </p>
+              </div>
+
+              <span class="accordion"
+                >Quais são as etapas de criação do meu site profissional?</span
+              >
+              <div class="panel">
+                <p>
+                  Bem simples. Você entrará em contato com nossa equipe, fará o
+                  pagamento online e receberá um briefing com algumas perguntas
+                  para entendermos qual a sua necessidade.
+                  <br /><br />
+                  Dependendo da complexidade e tamanho do seu site, definiremos
+                  o prazo de entrega. Para sites de uma página só, geralmente o
+                  prazo gira em torna de uma semana.
+                </p>
+              </div>
+
+              <span class="accordion"
+                >Preciso pagar algum valor mensal, depois de criar meu
+                site?</span
+              >
+              <div class="panel">
+                <p>
+                  Temos duas opções de criação: pagamento único e assinatura.
+                  <br /><br />
+                  Os sites de pagamento único, não tem mensalidade. Você
+                  solicita o site, paga, e te entregamos no final. Porém, neste
+                  caso, a manutenção, hospedagem, domínio e suporte ficarão por
+                  sua conta.
+                  <br /><br />
+                  Caso deseje que façamos tudo isso por você, sem que tenha que
+                  se preocupar com nada, temos a assinatura master, que inclui:
+                </p>
+                <ul>
+                  <li>Segurança do site</li>
+                  <li>
+                    Solicitações de mudanças e atualizações (tanto de design,
+                    quanto de conteúdo)
+                  </li>
+                  <li>Suporte especializado</li>
+                  <li>Hospedagem + anuidade do domínio</li>
+                </ul>
+              </div>
+              <span class="accordion"
+                >Quais informações preciso enviar para criar meu site?</span
+              >
+              <div class="panel">
+                <p>
+                  Após pagamento e assinar o contrato, você irá receber um
+                  questionário (o <i>briefing</i>). Essa pesquisa é fundamental
+                  para dar vida ao seu site. Vamos precisar de informações de
+                  texto, imagens e fotos sobre o seu negócio, dentre outras
+                  coisas.
+                </p>
+              </div>
+
+              <span class="accordion">Como sei se vocês são de confiança?</span>
+              <div class="panel">
+                <p>
+                  Somos uma empresa registrada, pode consultar nosso CNPJ:
+                  36.928.361/0001-40.
+                  <br /><br />
+                  Além do mais, pode conferir também as avaliações de alguns dos
+                  nossos clientes no Google Reviews e Facebook.
+                </p>
+              </div>
+
+              <span class="accordion">Tenho direito a devolução?</span>
+              <div class="panel">
+                <p>
+                  Sim, sim, sim! Queremos que fique conosco pela qualidade do
+                  nosso trabalho. Ponto.
+                  <br /><br />
+                  Durante todo o processo de fabricação da sua arte, se não
+                  quiser continuar conosco, te damos devolução total do valor.
+                  <br /><br />
+                  Lembrando que você não poderá solicitar devolução após aprovar
+                  a arte e receber os arquivos, ok?
+                </p>
+              </div>
+
+              <span class="accordion">Tem garantias? Contrato?</span>
+              <div class="panel">
+                <p>
+                  Sim, assinamos um contrato entre ambas as partes antes de
+                  começar qualquer trabalho. Dessa forma, fica mais seguro para
+                  nós e para você também.
+                </p>
+              </div>
+
+              <span class="accordion">Tem pacotes promocionais?</span>
+              <div class="panel">
+                <p>
+                  Tem também! Entendemos que, às vezes, você só precisa de uma
+                  arte em específica, e tudo bem.
+                  <br /><br />
+                  Os pacotes mais pedidos estão listados aqui no nosso site, mas
+                  você também pode montar o seu customizado. Para isso, é só
+                  entrar em contato!
+                </p>
+              </div>
+
+              <span class="accordion">Quais as formas de pagamento?</span>
+              <div class="panel">
+                <p>
+                  O pagamento é feito online via PagSeguro ou PayPal (você
+                  escolhe). Cartão de crédito em até 12x ou boleto bancário.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing">
+        <div style="grid-column: standard">
+          <div class="preheader">Quer algo mais completo?</div>
+          <h2 class="heading text-center">
+            <span class="heading-new-line highlighted-title"
+              >Tem pacotes também</span
+            >
+          </h2>
+        </div>
+
+        <div class="center-divider">
+          <div class="divider-container m-a">
+            <div class="divider">
+              <span class="divider-separator"> </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="packages">
+          <div class="pricing-packs">
+            <div class="pack pack-1" data-aos="fade-up">
+              <div class="pack-header"><h4>Bronze</h4></div>
+              <ul class="pack-advantages">
+                <li class="pack-advantage">
+                  <div class="pack-details">
+                    <span class="pack-label">Logo exclusiva e moderna</span>
+                  </div>
+                  <div class="pack-checkmark">
+                    <svg viewBox="0 0 17 13">
+                      <path
+                        d="M6.925 12.528a1.52 1.52 0 0 1-1.565-.442L.387 6.53A1.518 1.518 0 1 1 2.65 4.505l3.87 4.327L13.906.885A1.518 1.518 0 0 1 16.13 2.95l-8.5 9.15a1.51 1.51 0 0 1-.705.428z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+                <li class="pack-advantage">
+                  <div class="pack-details">
+                    <span class="pack-label">Cartão de visitas</span>
+                  </div>
+                  <div class="pack-checkmark">
+                    <svg viewBox="0 0 17 13">
+                      <path
+                        d="M6.925 12.528a1.52 1.52 0 0 1-1.565-.442L.387 6.53A1.518 1.518 0 1 1 2.65 4.505l3.87 4.327L13.906.885A1.518 1.518 0 0 1 16.13 2.95l-8.5 9.15a1.51 1.51 0 0 1-.705.428z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+                <li class="pack-advantage">
+                  <div class="pack-details">
+                    <span class="pack-label">Foto de perfis sociais</span>
+                  </div>
+                  <div class="pack-checkmark">
+                    <svg viewBox="0 0 17 13">
+                      <path
+                        d="M6.925 12.528a1.52 1.52 0 0 1-1.565-.442L.387 6.53A1.518 1.518 0 1 1 2.65 4.505l3.87 4.327L13.906.885A1.518 1.518 0 0 1 16.13 2.95l-8.5 9.15a1.51 1.51 0 0 1-.705.428z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+                <li class="pack-advantage">
+                  <div class="pack-details">
+                    <span class="pack-label">Capa para Facebook</span>
+                  </div>
+                  <div class="pack-checkmark">
+                    <svg viewBox="0 0 24 19">
+                      <path
+                        d="M23.783 8.582c-.047-.086-1.146-2.111-3.123-4.155C17.984 1.662 14.97.2 11.943.2S5.902 1.662 3.226 4.427C1.248 6.47.15 8.496.103 8.582a.865.865 0 0 0-.087.572.864.864 0 0 0 .087.573c.047.085 1.145 2.11 3.123 4.154 2.676 2.765 5.69 4.227 8.717 4.227 3.026 0 6.04-1.462 8.717-4.227 1.976-2.044 3.076-4.07 3.122-4.154a.87.87 0 0 0 .087-.573.865.865 0 0 0-.087-.574v.002zm-11.84 7.787c-5.552 0-9.39-5.918-10.166-7.216.773-1.3 4.598-7.215 10.165-7.215 5.552 0 9.39 5.916 10.164 7.215-.775 1.3-4.612 7.216-10.164 7.216zm1.36-7.288c0-.416.338-.868.757-.868h1.842c-.362-1.737-1.999-3.183-3.966-3.183-2.232 0-4.041 1.85-4.041 4.082 0 2.232 1.81 4.094 4.04 4.094 1.981 0 3.628-1.517 3.973-3.255H14.06c-.418 0-.755-.452-.755-.869l-.001-.001z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+              <div class="pack-subtitle m-1">Parcelado em até 12x</div>
+              <a
+                class="pack-action"
+                href="https://wa.me/5511968628708?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20sobre%20seus%20serviços."
+                >Pedir Orçamento
+              </a>
+            </div>
+
+            <div class="pack pack-plus">
+              <div class="pack-header"><h4>Ouro</h4></div>
+              <ul class="pack-advantages">
+                <li class="pack-advantage">
+                  <div class="pack-details">
+                    <span class="pack-label"
+                      >Tudo do &amp;nbsp;<strong
+                        ><u>Pacote Bronze</u></strong
+                      ></span
+                    >
+                  </div>
+                  <div class="pack-checkmark">
+                    <svg viewBox="0 0 17 13">
+                      <path
+                        d="M6.925 12.528a1.52 1.52 0 0 1-1.565-.442L.387 6.53A1.518 1.518 0 1 1 2.65 4.505l3.87 4.327L13.906.885A1.518 1.518 0 0 1 16.13 2.95l-8.5 9.15a1.51 1.51 0 0 1-.705.428z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+                <li class="pack-advantage">
+                  <div class="pack-details">
+                    <span class="pack-label"
+                      >Slogans, panfletos, folders, faixas</span
+                    >
+                  </div>
+                  <div class="pack-checkmark">
+                    <svg viewBox="0 0 17 13">
+                      <path
+                        d="M6.925 12.528a1.52 1.52 0 0 1-1.565-.442L.387 6.53A1.518 1.518 0 1 1 2.65 4.505l3.87 4.327L13.906.885A1.518 1.518 0 0 1 16.13 2.95l-8.5 9.15a1.51 1.51 0 0 1-.705.428z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+                <li class="pack-advantage">
+                  <div class="pack-details">
+                    <span class="pack-label"
+                      >Uniformes e artes para camisetas</span
+                    >
+                  </div>
+                  <div class="pack-checkmark">
+                    <svg viewBox="0 0 17 13">
+                      <path
+                        d="M6.925 12.528a1.52 1.52 0 0 1-1.565-.442L.387 6.53A1.518 1.518 0 1 1 2.65 4.505l3.87 4.327L13.906.885A1.518 1.518 0 0 1 16.13 2.95l-8.5 9.15a1.51 1.51 0 0 1-.705.428z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+                <li class="pack-advantage">
+                  <div class="pack-details">
+                    <span class="pack-label"
+                      >Banners e fachadas comerciais</span
+                    >
+                  </div>
+                  <div class="pack-checkmark">
+                    <svg viewBox="0 0 17 13">
+                      <path
+                        d="M6.925 12.528a1.52 1.52 0 0 1-1.565-.442L.387 6.53A1.518 1.518 0 1 1 2.65 4.505l3.87 4.327L13.906.885A1.518 1.518 0 0 1 16.13 2.95l-8.5 9.15a1.51 1.51 0 0 1-.705.428z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+                <li class="pack-advantage">
+                  <div class="pack-details">
+                    <span class="pack-label"
+                      >Apoio de marketing sob contratação</span
+                    >
+                  </div>
+                  <div class="pack-checkmark">
+                    <svg viewBox="0 0 24 19">
+                      <path
+                        d="M23.783 8.582c-.047-.086-1.146-2.111-3.123-4.155C17.984 1.662 14.97.2 11.943.2S5.902 1.662 3.226 4.427C1.248 6.47.15 8.496.103 8.582a.865.865 0 0 0-.087.572.864.864 0 0 0 .087.573c.047.085 1.145 2.11 3.123 4.154 2.676 2.765 5.69 4.227 8.717 4.227 3.026 0 6.04-1.462 8.717-4.227 1.976-2.044 3.076-4.07 3.122-4.154a.87.87 0 0 0 .087-.573.865.865 0 0 0-.087-.574v.002zm-11.84 7.787c-5.552 0-9.39-5.918-10.166-7.216.773-1.3 4.598-7.215 10.165-7.215 5.552 0 9.39 5.916 10.164 7.215-.775 1.3-4.612 7.216-10.164 7.216zm1.36-7.288c0-.416.338-.868.757-.868h1.842c-.362-1.737-1.999-3.183-3.966-3.183-2.232 0-4.041 1.85-4.041 4.082 0 2.232 1.81 4.094 4.04 4.094 1.981 0 3.628-1.517 3.973-3.255H14.06c-.418 0-.755-.452-.755-.869l-.001-.001z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+              <div class="pack-subtitle m-1">Parcelado em até 12x</div>
+              <a
+                class="pack-action"
+                href="https://wa.me/5511968628708?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20sobre%20seus%20serviços."
+                >Pedir Orçamento
+              </a>
+            </div>
+
+            <div class="ribbon" data-aos="zoom-in">
+              <span>O mais pedido</span>
+            </div>
+
+            <div class="pack pack-3" data-aos="fade-up">
+              <div class="pack-header"><h4>Diamante</h4></div>
+              <ul class="pack-advantages">
+                <li class="pack-advantage">
+                  <div class="pack-details">
+                    <span class="pack-label"
+                      >Tudo do &amp;nbsp;<strong
+                        ><u>Pacote Ouro</u></strong
+                      ></span
+                    >
+                  </div>
+                  <div class="pack-checkmark">
+                    <svg viewBox="0 0 17 13">
+                      <path
+                        d="M6.925 12.528a1.52 1.52 0 0 1-1.565-.442L.387 6.53A1.518 1.518 0 1 1 2.65 4.505l3.87 4.327L13.906.885A1.518 1.518 0 0 1 16.13 2.95l-8.5 9.15a1.51 1.51 0 0 1-.705.428z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+                <li class="pack-advantage">
+                  <div class="pack-details">
+                    <span class="pack-label">Criação de website</span>
+                  </div>
+                  <div class="pack-checkmark">
+                    <svg viewBox="0 0 17 13">
+                      <path
+                        d="M6.925 12.528a1.52 1.52 0 0 1-1.565-.442L.387 6.53A1.518 1.518 0 1 1 2.65 4.505l3.87 4.327L13.906.885A1.518 1.518 0 0 1 16.13 2.95l-8.5 9.15a1.51 1.51 0 0 1-.705.428z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+                <li class="pack-advantage">
+                  <div class="pack-details">
+                    <span class="pack-label"
+                      >Design bonito, moderno e responsivo</span
+                    >
+                  </div>
+                  <div class="pack-checkmark">
+                    <svg viewBox="0 0 17 13">
+                      <path
+                        d="M6.925 12.528a1.52 1.52 0 0 1-1.565-.442L.387 6.53A1.518 1.518 0 1 1 2.65 4.505l3.87 4.327L13.906.885A1.518 1.518 0 0 1 16.13 2.95l-8.5 9.15a1.51 1.51 0 0 1-.705.428z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+                <li class="pack-advantage">
+                  <div class="pack-details">
+                    <span class="pack-label"
+                      >Suporte do site sob contratação</span
+                    >
+                  </div>
+                  <div class="pack-checkmark">
+                    <svg viewBox="0 0 24 19">
+                      <path
+                        d="M23.783 8.582c-.047-.086-1.146-2.111-3.123-4.155C17.984 1.662 14.97.2 11.943.2S5.902 1.662 3.226 4.427C1.248 6.47.15 8.496.103 8.582a.865.865 0 0 0-.087.572.864.864 0 0 0 .087.573c.047.085 1.145 2.11 3.123 4.154 2.676 2.765 5.69 4.227 8.717 4.227 3.026 0 6.04-1.462 8.717-4.227 1.976-2.044 3.076-4.07 3.122-4.154a.87.87 0 0 0 .087-.573.865.865 0 0 0-.087-.574v.002zm-11.84 7.787c-5.552 0-9.39-5.918-10.166-7.216.773-1.3 4.598-7.215 10.165-7.215 5.552 0 9.39 5.916 10.164 7.215-.775 1.3-4.612 7.216-10.164 7.216zm1.36-7.288c0-.416.338-.868.757-.868h1.842c-.362-1.737-1.999-3.183-3.966-3.183-2.232 0-4.041 1.85-4.041 4.082 0 2.232 1.81 4.094 4.04 4.094 1.981 0 3.628-1.517 3.973-3.255H14.06c-.418 0-.755-.452-.755-.869l-.001-.001z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+              <div class="pack-subtitle m-1">Parcelado em até 12x</div>
+              <a
+                class="pack-action"
+                href="https://wa.me/5511968628708?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20sobre%20seus%20serviços."
+                >Pedir Orçamento
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lets-go">
+        <div class="relative pt-32 px-6">
+          <div class="container">
+            <div class="relative z-1 max-w-md pb-56 pb-0">
+              <h2
+                class="highlighted-title font-serif font-hairline text-4xl mb-4 leading-none font-semibold text-5xl"
+              >
+                Preparado para
+                <strong class="text-grey"
+                  ><span>começar</span
+                  ><img
+                    alt=""
+                    src="https://diogosouza.github.io/ajuba/images/title-bg.svg"
+                    height="0"
+                    width="0"
+                /></strong>
+                seu projeto?
+              </h2>
+              <p class="mb-10 text-lg leading-tight font-medium">
+                Se você está aqui, é porque tem sonhos, nem que seja o de
+                melhorar o look do seu negócio... <br /><br />
+                Deixa a gente te ajudar a realizá-lo!
+              </p>
+              <a
+                target="_blank"
+                href="https://wa.me/5511968628708?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20sobre%20seus%20serviços."
+                class="cursor-pointer group inline-flex flex-row items-center select-none transition transition-250"
+                ><span class="pr-2">Vai, manda uma mensagem →</span></a
+              >
+            </div>
+            <div
+              data-aos="zoom-in"
+              class="bg-contain bg-right-bottom bg-no-repeat absolute top-0 right-0 bottom-0 w-full w-3/5 top-0"
+              style="
+                background-image: url(https://diogosouza.github.io/ajuba/images/services.svg);
+                transform: scale(0.8);
+              "
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="fl-content">
+          <div class="fl-col-group">
+            <div class="fl-col">
+              <h4 class="fl-heading">
+                <span class="fl-heading-text">Ajubá Design</span>
+              </h4>
+              <p>
+                A Ajubá Design nasceu com um objetivo bem definido: entregar
+                conteúdos digitais de alta qualidade, que gerem impacto e façam
+                a diferença na vida dos nossos clientes.<br /><br />
+                Vem ser nosso parceiro também!
+              </p>
+            </div>
+
+            <div class="fl-col">
+              <h4 class="fl-heading">
+                <span class="fl-heading-text">Segue a Gente</span>
+              </h4>
+              <ul class="fl-socials">
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/ajubadesign/"
+                  >
+                    <img
+                      src="https://diogosouza.github.io/ajuba/images/icons/facebook.svg"
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/ajubadesign/"
+                  >
+                    <img
+                      src="https://diogosouza.github.io/ajuba/images/icons/instagram.svg"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://br.pinterest.com/ajubadesign/"
+                  >
+                    <img
+                      src="https://diogosouza.github.io/ajuba/images/icons/pinterest.svg"
+                    />
+                  </a>
+                </li>
+              </ul>
+              <h4 class="fl-contact mt-1">
+                <span class="fl-heading-text">Contato</span>
+              </h4>
+
+              <ul class="elementor-icon-list-items">
+                <li class="elementor-icon-list-item">
+                  <a href="mailto:oi@ajuba.com.br">
+                    <span class="elementor-icon-list-icon"> </span>
+                    <span class="elementor-icon-list-text"
+                      >oi@ajuba.com.br</span
+                    >
+                  </a>
+                </li>
+                <li class="elementor-icon-list-item">
+                  <a href="tel:011968628708">
+                    <span class="elementor-icon-list-icon"> </span>
+                    <span class="elementor-icon-list-text"
+                      >(11) 96862-8708</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="fl-col-group">
+            <div class="fl-col">
+              <p>
+                © Ajubá Design, 2020 -
+                <a href="https://huemor.rocks/privacy-policy/"
+                  >Política de Privacidade</a
+                >
+              </p>
+              <div class="fl-small-text">
+                <p>
+                  <span style="color: #686868"
+                    >A <strong>Ajubá Design</strong> é uma agência digital de
+                    web design. Essa marca pertence à empresa
+                    <a target="_blank" href="https://altaluna.com.br"
+                      >Alta Luna</a
+                    >.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="fl-col">
+              <div class="fl-col-content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@6.3.1/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://diogosouza.github.io/ajuba/js/index.js"></script>
+  </body>
+</html>
