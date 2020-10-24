@@ -57,7 +57,7 @@
     });
 
   // Referrals
-  $(".referrals").not(".slick-initialized").slick({
+  $(".referrals:not(.slick-initialized)").slick({
     autoplay: true,
     autoplaySpeed: 4000,
   });
