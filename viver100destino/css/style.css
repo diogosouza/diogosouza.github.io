@@ -1326,7 +1326,6 @@ textarea.form-control {
 
 .home-banner-area .owl-dots .owl-dot {
   cursor: pointer;
-  display: inline-block;
   margin-right: 12px;
   border-radius: 10px;
   max-width: 80px;
