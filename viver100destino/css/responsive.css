@@ -154,6 +154,7 @@
   }
   .home-banner-area .owl-dots .owl-dot {
     max-width: 56px;
+    max-height: 56px;
   }
   .home-banner-area .owl-dots .owl-dot:last-child {
     margin-right: 0;
