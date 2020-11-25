@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $.magnificPopup.open({
         items: {
-            src: 'https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg'
+            src: 'https://diogosouza.github.io/vbr/images/blackfriday.jpg'
         },
         type: 'image'
     }, 0);
