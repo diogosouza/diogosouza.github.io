@@ -1,3 +1,7 @@
+$(window).on("load", function() {
+  $(".se-pre-con").fadeOut("slow");;
+});
+
 $(document).ready(function() {
     var url = window.location.href.replace("?m=1", "");
     var uri = url.substring(url.lastIndexOf("/") + 1);
