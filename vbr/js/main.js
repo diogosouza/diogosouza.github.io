@@ -1,11 +1,8 @@
-$(document).ready(function() {
-    $.magnificPopup.open({
-        items: {
-            src: 'https://diogosouza.github.io/vbr/images/blackfriday.jpg'
-        },
-        type: 'image'
-    }, 0);
+$(window).on("load", function() {
+  $(".se-pre-con").fadeOut("slow");;
+});
 
+$(document).ready(function() {
     var url = window.location.href.replace("?m=1", "");
     var uri = url.substring(url.lastIndexOf("/") + 1);
     switch (uri) {
