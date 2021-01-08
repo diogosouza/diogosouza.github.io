@@ -16,12 +16,7 @@
 /* Posts */
 section > .post {padding: 80px 0;}
 
-.post-thumb a {
-    height: 480px;
-}
-
-.post-thumb a {
-    display: block;
+.post-thumb img {
     width: 100%;
-    overflow: hidden;
+	max-height: 480px;
 }
