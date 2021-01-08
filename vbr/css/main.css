@@ -18,7 +18,6 @@ section > .post {padding: 80px 0;}
 
 .post-body img {
     width: 100%;
-	max-height: 480px;
 }
 
 .post-info {
@@ -91,7 +90,15 @@ h1.entry-title {
 }
 
 div#main0 {
-    max-width: 83%;
+    max-width: 70%;
+}
+
+.post h3 {
+	font-size: 2rem;
+}
+
+.post li {
+    margin-left: 2rem;
 }
 
 .post-body table{margin-bottom:20px;width:100%}
@@ -99,3 +106,16 @@ div#main0 {
 .post-body thead th{background:#c3d9ff}
 .post-body th,td,caption{padding:4px 10px 4px 5px}
 .post-body tr.even td{background:#e5ecf9}
+
+.item .don-share {
+    margin: 40px 0px 0px 0;
+    border-bottom: 1px solid #d2d2d2;
+    border-top: 1px solid #d2d2d2;
+    padding: 15px 0px;
+}
+.don-share {
+    margin: 15px -10px 15px 0;
+    position: relative;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
