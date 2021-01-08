@@ -15,3 +15,13 @@
 
 /* Posts */
 section > .post {padding: 80px 0;}
+
+.post-thumb a {
+    height: 480px;
+}
+
+.post-thumb a {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
