@@ -12,3 +12,6 @@
     text-decoration: underline;
     font-weight: 700;
 }
+
+/* Posts */
+section > .post {padding: 80px 0;}
