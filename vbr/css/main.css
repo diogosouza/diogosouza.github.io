@@ -63,6 +63,7 @@ section > .post {
     padding: 0 0 0 28px;
     margin: 17px 0 24px;
     border-left: 1px dotted #d7d7d7;
+    border-bottom: 1px dotted #d7d7d7;
     position: relative;
     font-style: italic;
 }
@@ -113,15 +114,63 @@ div#main0 {
 .post-body th,td,caption{padding:4px 10px 4px 5px}
 .post-body tr.even td{background:#e5ecf9}
 
-.item .don-share {
-    margin: 40px 0px 0px 0;
-    border-bottom: 1px solid #d2d2d2;
-    border-top: 1px solid #d2d2d2;
-    padding: 15px 0px;
-}
-.don-share {
-    margin: 15px -10px 15px 0;
+.social-buttons {
+    text-align: center;
+    margin-top: 35px;
     position: relative;
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.social-buttons:after {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid;
+    border-color: #ddd;
+    width: 100%;
+    left: 0;
+    bottom: 15px;
+    z-index: 0;
+}
+
+.hi-icon-wrap {
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    z-index: 9;
+    padding: 0 20px;
+    text-align: center;
+}
+
+a.hi-icon {
+    border: 1px solid #fa8909;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 5px;
+}
+
+.hi-icon {
+    display: inline-block;
     font-size: 14px;
+    cursor: pointer;
+    line-height: 35px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #fa8909!important;
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    -ms-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    transition: all .15s linear;
+}
+
+.hi-icon:hover i {
+    color: #fff;
+}
+
+.hi-icon:hover {
+    border-color: #fa8909;
+    background: #fa8909;
 }
