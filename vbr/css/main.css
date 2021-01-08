@@ -14,7 +14,13 @@
 }
 
 /* Posts */
-section > .post {padding: 80px 0;}
+section > .post {
+	padding: 80px 0;
+}
+
+.post h1, .post h2, .post h3 {
+	font-family: Raleway,Segoe UI,cursive;
+}
 
 .post-body img {
     width: 100%;
@@ -90,7 +96,7 @@ h1.entry-title {
 }
 
 div#main0 {
-    max-width: 70%;
+    max-width: 60%;
 }
 
 .post h3 {
