@@ -93,3 +93,9 @@ h1.entry-title {
 div#main0 {
     max-width: 83%;
 }
+
+.post-body table{margin-bottom:20px;width:100%}
+.post-body th{font-weight:bold;}
+.post-body thead th{background:#c3d9ff}
+.post-body th,td,caption{padding:4px 10px 4px 5px}
+.post-body tr.even td{background:#e5ecf9}
