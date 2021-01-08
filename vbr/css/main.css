@@ -16,7 +16,7 @@
 /* Posts */
 section > .post {padding: 80px 0;}
 
-.post-thumb img {
+.post-body img {
     width: 100%;
 	max-height: 480px;
 }
