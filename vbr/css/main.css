@@ -174,3 +174,21 @@ a.hi-icon {
     border-color: #fa8909;
     background: #fa8909;
 }
+
+#related-posts{
+  padding-left:5px;
+  margin-top:50px
+}
+#related-posts h2{
+  color:#555;
+  margin-bottom:.7em;
+  margin-top:0em;
+  padding-top:0em
+}
+#related-posts a{
+  color:#2361A1;
+  min-height:250px
+}
+#related-posts a:hover{
+  opacity: .9;
+}
