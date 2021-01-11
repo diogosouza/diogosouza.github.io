@@ -297,6 +297,9 @@ margin: 0;
 }
 
 @media only screen and (max-width:1024px){
+	section#main-wrapper {
+		    padding: 0 20px!important;
+	}
 	.post-body div, .post-body p {
     font-size: 17px;
 }
