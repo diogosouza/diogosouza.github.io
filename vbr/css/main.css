@@ -206,7 +206,10 @@ a.hi-icon {
     text-align: center;
 }
 
-section#main-wrapper {clear: both;}
+section#main-wrapper {
+	clear: both;
+	margin-top: 6rem;
+}
 
 .blog-posts .post-outer {
     background-color: #f4f4f4;
