@@ -300,6 +300,9 @@ margin: 0;
 	section#main-wrapper {
 		    padding: 0 20px!important;
 	}
+	.blog-posts.hfeed {
+		grid-template-columns: 1fr;
+	}
 	.post-body div, .post-body p {
     font-size: 17px;
 }
@@ -316,4 +319,5 @@ margin: 0;
     display: flex;
     flex-direction: column;
 }
+
 	}
