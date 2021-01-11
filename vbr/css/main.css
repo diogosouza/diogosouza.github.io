@@ -295,3 +295,22 @@ margin: 0;
 .blog-pager a:hover {
     color: #ef3b58;
 }
+
+@media only screen and (max-width:1024px){
+	.post-body div, .post-body p {
+    font-size: 17px;
+}
+
+#related-posts a {
+    width: 100% !important;
+}
+
+#related-posts h2 {
+    text-align: center;
+}
+
+.author-profile-bottom {
+    display: flex;
+    flex-direction: column;
+}
+	}
