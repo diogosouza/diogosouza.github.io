@@ -193,11 +193,13 @@ a.hi-icon {
   opacity: .9;
 }
 
-.blog-posts.hfeed {display: grid;grid-auto-columns: 1fr;grid-auto-flow: column;}
+.blog-posts.hfeed {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 .blog-posts.hfeed > div {
-    margin-right: 3%;
-    margin-left: 3%;
+    margin: 0 3% 3%;
 }
 
 #main-wrapper h1 {
