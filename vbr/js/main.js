@@ -22,7 +22,6 @@ $(document).ready(function() {
     }
 
     // Menu activation
-    $(".header-whatsapp a").removeClass("active");
     switch (uri) {
         case "quem-somos":
         case "servicos":
