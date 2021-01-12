@@ -8,6 +8,7 @@ $(document).ready(function() {
     switch (uri) {
         case "quem-somos":
             $("#main__about").show();
+            $("." + uri).addClass("active");
             break;
         case "servicos":
             $("#main__services").show();
@@ -17,6 +18,19 @@ $(document).ready(function() {
             break;
         default:
             $("#main__home").show();
+            break;
+    }
+
+    // Menu activation
+    $(".header-whatsapp a").removeClass("active");
+    switch (uri) {
+        case "quem-somos":
+        case "servicos":
+        case "contato":
+            $("." + uri).addClass("active");
+            break;
+        default:
+            $(".home").addClass("active");
             break;
     }
 
