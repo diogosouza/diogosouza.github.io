@@ -3,6 +3,13 @@ $(window).on("load", function() {
 });
 
 $(document).ready(function() {
+  $.magnificPopup.open({
+        items: {
+            src: 'https://diogosouza.github.io/vbr/images/banner.jpg'
+        },
+        type: 'image'
+    }, 0);
+  
     var url = window.location.href.replace("?m=1", "");
     var uri = url.substring(url.lastIndexOf("/") + 1);
     switch (uri) {
