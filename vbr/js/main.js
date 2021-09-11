@@ -198,3 +198,21 @@ AOS.init({
     delay: 100,
     once: true
 });
+
+$.each($('span.tag img'), function (i, curr) {
+    var src_w = $(curr).siblings('source[type="image/webp"]')
+    var src_p = $(curr).siblings('source[type="image/png"]')
+
+    $(curr).hover(function () {
+        var new_srcset_w = $(src_w).attr('srcset').replace('.webp', '2.webp')
+        var new_srcset_p = $(src_p).attr('srcset').replace('.png', '2.png')
+        $(src_w).attr('srcset', new_srcset_w)
+        $(src_p).attr('srcset', new_srcset_p)
+    }, 
+    function () {
+        var new_srcset_w = $(src_w).attr('srcset').replace('2.webp', '.webp')
+        var new_srcset_p = $(src_p).attr('srcset').replace('2.png', '.png')
+        $(src_w).attr('srcset', new_srcset_w)
+        $(src_p).attr('srcset', new_srcset_p)
+    });
+});
