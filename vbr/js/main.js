@@ -33,17 +33,17 @@ $(document).ready(function() {
             break;
     }
 
-    // Scroll button
-    $("#scroll-btn").click(function() {
-        scrollToTop();
-    });
+  $('a[href^="#"].scrollable').on("click", function (event) {
+    event.preventDefault();
 
-    $('a[href^="#"]').click(function(event) {
-        event.preventDefault();
+    var href = $.attr(this, "href")
+    $("html, body").animate({ scrollTop: $(href).offset().top - 120 }, 1000);
+  });
 
-        var href = $.attr(this, "href")
-        $("html, body").animate({ scrollTop: $(href).offset().top - 120 }, 1000);
-    });
+  // Scroll button
+  $("#scroll-btn").on("click", function() {
+    scrollToTop();
+  });
 
     // Logo Animation
     var textWrapper = document.querySelector(".ml9 .letters");
