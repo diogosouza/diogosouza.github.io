@@ -12,13 +12,6 @@ $(document).ready(function() {
             break;
         case "servicos":
             $("#main__services").show();
-            
-AOS.init({
-    offset: 200,
-    duration: 1200,
-    delay: 100,
-    once: true
-});
             break;
         case "contato":
             $("#main__contact").show();
