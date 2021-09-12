@@ -1,6 +1,6 @@
-$(window).on("load", function() {
-  $(".se-pre-con").fadeOut("slow");;
-});
+// $(window).on("load", function() {
+//   $(".se-pre-con").fadeOut("slow");;
+// });
 
 $(document).ready(function() {
     var url = window.location.href.replace("?m=1", "");
