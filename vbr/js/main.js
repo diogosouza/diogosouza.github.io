@@ -41,11 +41,8 @@ $(document).ready(function() {
     $('a[href^="#"]').click(function(event) {
         event.preventDefault();
 
-        $("html, body").animate({
-                scrollTop: $(this).offset().top,
-            },
-            500
-        );
+        var href = $.attr(this, "href")
+        $("html, body").animate({ scrollTop: $(href).offset().top - 120 }, 1000);
     });
 
     // Logo Animation
