@@ -12,6 +12,13 @@ $(document).ready(function() {
             break;
         case "servicos":
             $("#main__services").show();
+            
+AOS.init({
+    offset: 200,
+    duration: 1200,
+    delay: 100,
+    once: true
+});
             break;
         case "contato":
             $("#main__contact").show();
@@ -191,13 +198,6 @@ function watchScrollDown() {
         $("header h1, header, header .header").removeClass("scrolled");
     }
 }
-
-AOS.init({
-    offset: 200,
-    duration: 1200,
-    delay: 100,
-    once: true
-});
 
 $.each($('span.tag img'), function (i, curr) {
     var src_w = $(curr).siblings('source[type="image/webp"]')
