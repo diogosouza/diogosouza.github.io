@@ -466,7 +466,7 @@ ul.languages__sub-menu {
     margin: 0;
     max-height: 45px;
 }
-}@media only screen and (max-width:600px) {
+}@media only screen and (max-width:850px) {
     .flags{
         display: flex;
         justify-content: space-between;
