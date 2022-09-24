@@ -99,9 +99,6 @@ footer, nav, section .layout__wrapper {
     display: flex;
     flex: 1;
 }
-section .layout__wrapper {
-    padding: 0 20px !important;
-}
 section.contact__banner {
     padding: 0;
 }
@@ -466,7 +463,7 @@ ul.languages__sub-menu {
     margin: 0;
     max-height: 45px;
 }
-}@media only screen and (max-width:850px) {
+}@media only screen and (max-width:600px) {
     .flags{
         display: flex;
         justify-content: space-between;
