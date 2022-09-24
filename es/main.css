@@ -99,7 +99,7 @@ footer, nav, section .layout__wrapper {
     display: flex;
     flex: 1;
 }
-.container section .layout__wrapper{
+section .layout__wrapper {
     padding: 0 20px !important;
 }
 section.contact__banner {
