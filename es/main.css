@@ -2380,10 +2380,6 @@ ul.languages__sub-menu {
     .menu ul li {
         padding-left: 0;
     }
-    .flags{
-        display: flex;
-        justify-content: space-between;
-    }
 }
 .animBlock {
     opacity: 0;
