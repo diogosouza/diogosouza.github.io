@@ -93,6 +93,7 @@ section {
 footer, nav, section .layout__wrapper {
     max-width: 1200px;
     margin: auto;
+    padding: 0 20px;
 }
 .contact__banner .layout__wrapper {
     color: #fff;
