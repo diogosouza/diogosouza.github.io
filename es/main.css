@@ -94,13 +94,13 @@ footer, nav, section .layout__wrapper {
     max-width: 1200px;
     margin: auto;
 }
-.layout__wrapper{
-    padding: 0 20px !important;
-}
 .contact__banner .layout__wrapper {
     color: #fff;
     display: flex;
     flex: 1;
+}
+.container section .layout__wrapper{
+    padding: 0 20px !important;
 }
 section.contact__banner {
     padding: 0;
