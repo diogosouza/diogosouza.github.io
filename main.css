@@ -2489,7 +2489,7 @@ to {
     color: #268cf5;
 }
 ul.flags {
-    padding: 0;
+    padding: 0 !important;
     margin: 1em 0 3.5em;
 }
 .flags li {
