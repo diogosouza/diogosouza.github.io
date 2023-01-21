@@ -587,9 +587,9 @@ ul.flags {
     margin-right: 2%;
     max-height: 40px;
 }
-.flags li a p{
-    width: 100%;
-    text-align: center;
+.flags li a .langue{
+    width: 100% !important;
+    text-align: center !important;
 }
 .flags li img {
     max-width: 40px;
