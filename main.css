@@ -2487,7 +2487,8 @@ ul.flags {
     padding: 0;
 }
 .flags li {
-    display: inline-block;
+    /*display: inline-block;*/
+    display: flex;
     margin-right: 2%;
     max-height: 40px;
 }
