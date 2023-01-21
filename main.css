@@ -468,7 +468,9 @@ ul.languages__sub-menu {
         display: flex;
         justify-content: space-between;
     }
-
+    .langue{
+        font-size: 10px;
+    }
     .menu img {
         max-height: 72px;
     }
