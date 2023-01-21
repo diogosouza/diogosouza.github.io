@@ -468,8 +468,11 @@ ul.languages__sub-menu {
         display: flex;
         justify-content: space-between;
     }
+    ul.flags{
+        padding-right: 0;
+    }
     .langue{
-        font-size: 10px;
+        font-size: 15px;
     }
     .menu img {
         max-height: 72px;
