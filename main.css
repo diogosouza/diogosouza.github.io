@@ -2487,6 +2487,7 @@ to {
 }
 ul.flags {
     padding: 0;
+    margin: 1em 0 3.5em;
 }
 .flags li {
     /*display: inline-block;*/
