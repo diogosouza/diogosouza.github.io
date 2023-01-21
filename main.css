@@ -575,6 +575,10 @@ to {
 }
 ul.flags {
     padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-right: 5%;
 }
 .flags li {
     display: inline-block;
