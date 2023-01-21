@@ -469,7 +469,7 @@ ul.languages__sub-menu {
         justify-content: space-between;
     }
     ul.flags{
-        padding-right: 0;
+        padding-right: 0 !important;
     }
     .langue{
         font-size: 15px;
