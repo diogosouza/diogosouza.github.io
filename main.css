@@ -578,7 +578,7 @@ ul.flags {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding-right: 5%;
+    padding-right: 5% !important;
 }
 .flags li {
     display: inline-block;
