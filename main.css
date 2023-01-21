@@ -587,7 +587,7 @@ ul.flags {
     margin-right: 2%;
     max-height: 40px;
 }
-.flags li .langue{
+.flags li p.langue{
     width: 100% !important;
     text-align: center !important;
 }
@@ -2488,7 +2488,7 @@ ul.flags {
 }
 .flags li {
     /*display: inline-block;*/
-    display: flex;
+    display: flex !important;
     margin-right: 2%;
     max-height: 40px;
 }
