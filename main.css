@@ -581,9 +581,15 @@ ul.flags {
     padding-right: 5% !important;
 }
 .flags li {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-right: 2%;
     max-height: 40px;
+}
+.flags li a p{
+    width: 100%;
+    text-align: center;
 }
 .flags li img {
     max-width: 40px;
